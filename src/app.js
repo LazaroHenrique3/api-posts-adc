@@ -16,7 +16,8 @@ const PORT = process.env.PORT
 app.use(express.json())
 
 app.get('/', async (req, res) => {
-    res.send("Hello World")
+    //res.send("Hello World")
+    return res.json("Hello World")
 })
 
 app.post('/create_post', async (req, res) => {
