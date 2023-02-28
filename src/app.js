@@ -15,7 +15,7 @@ const PORT = process.env.PORT
 //Midleware(executa quando usar as rotas)
 app.use(express.json())
 
-app.post('/create_post', async (req, res) => {
+app.get('/', async (req, res) => {
     res.send("Hello World")
 })
 
